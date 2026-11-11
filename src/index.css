@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FFFDF7;
+    color: #2B0710;
+    font-family: 'Montserrat', 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B0710;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F4E8C1;
+}
+
+/* Luxury Gold Text Gradient */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFF4D0 40%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-subtle {
+  background: linear-gradient(135deg, #F4E8C1 0%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Luxury Effects */
+.navbar-glass {
+  background: rgba(43, 7, 16, 0.45);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.5),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.22),
+              inset 0 -1px 1px 0 rgba(212, 175, 55, 0.15),
+              0 0 20px rgba(212, 175, 55, 0.12);
+}
+
+.navbar-glass-scrolled {
+  background: rgba(43, 7, 16, 0.75);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  box-shadow: 0 20px 50px -10px rgba(20, 2, 6, 0.75),
+              inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.28),
+              inset 0 -1px 1px 0 rgba(212, 175, 55, 0.2),
+              0 0 25px rgba(212, 175, 55, 0.22);
+}
+
+.glass-burgundy {
+  background: rgba(43, 7, 16, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.glass-ivory {
+  background: rgba(255, 253, 247, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease;
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+/* Royal Pattern Background */
+.bg-royal-pattern {
+  background-color: #2B0710;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-ivory-pattern {
+  background-color: #FFFDF7;
+  background-image: radial-gradient(rgba(69, 10, 24, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
